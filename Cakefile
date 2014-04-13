@@ -5,7 +5,6 @@ less        = require 'less'
 
 sourceFiles  = [
   'SwaggerUi'
-  'view/HeaderView'
   'view/MainView'
   'view/ResourceView'
   'view/OperationView'

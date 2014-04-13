@@ -6,7 +6,6 @@ class SwaggerUi extends Backbone.Router
   # Attributes
   options: null
   api: null
-  headerView: null
   mainView: null
 
   # SwaggerUi accepts all the same options as SwaggerApi
@@ -26,12 +25,6 @@ class SwaggerUi extends Backbone.Router
     @options.progress = (d) => @showMessage(d)
     @options.failure = (d) => @onLoadFailure(d)
 
-    # Create view to handle the header inputs
-    @headerView = new HeaderView({el: $('#header')})
-
-    # Event handler for when the baseUrl/apiKey is entered by user
-    @headerView.on 'update-swagger-ui', (data) => @updateSwaggerUi(data)
-
   # Event handler for when url/key is received from user
   updateSwaggerUi: (data) ->
     @options.url = data.url
@@ -46,7 +39,6 @@ class SwaggerUi extends Backbone.Router
       url = @buildUrl(window.location.href.toString(), url)
 
     @options.url = url
-    @headerView.update(url)
     @api = new SwaggerApi(@options)
     @api.build()
     @api
