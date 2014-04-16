@@ -561,6 +561,8 @@ table {
 }
 .swagger-ui-wrap ul#resources li.resource {
   border-bottom: 1px solid #dddddd;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 .swagger-ui-wrap ul#resources li.resource:hover div.heading h2 a,
 .swagger-ui-wrap ul#resources li.resource.active div.heading h2 a {
@@ -1350,7 +1352,6 @@ table {
 .dapulse_footer {
   width: 100%;
   background-color: #494949;
-  margin-top: 50px;
 }
 .dapulse_footer .footer_inner {
   max-width: 960px;
@@ -1476,9 +1477,127 @@ table {
   background-image: url(http://d1f5eoceewynq7.cloudfront.net/api_img/circle-20-yt.png);
 }
 .dapulse_footer .page_footer {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #777;
   margin-top: 10px;
   font-size: 0.8em;
+}
+.login_down {
+  background-color: #0fa2e2;
+  margin: 50px 0px 0px 0px;
+  padding: 50px 0px 100px 0;
+  color: #fff;
+}
+.login_down h4,
+.login_down h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.login_down .login_titles {
+  text-align: center;
+}
+.login_down .login_titles h4.signup_title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 56px;
+  text-align: center;
+}
+.login_down .login_titles h5.signup_subtitle {
+  font-family: 'Roboto';
+  font-size: 17px;
+  font-weight: normal;
+}
+.login_down .login_box {
+  max-width: 400px;
+  margin: 0px auto;
+  text-align: center;
+}
+.login_down .login_box .alert {
+  background-color: #c66c90;
+  color: #fff;
+  border-radius: 3;
+  font-family: 'Roboto', sans-serif;
+  padding: 5px;
+}
+.login_down .login_box .signup_form .row {
+  width: 460px;
+}
+.login_down .login_box .signup_form .signup_input_wrapper {
+  padding: 0px 3px;
+  font-family: 'Roboto', sans-serif;
+  float: left;
+  width: 50%;
+  margin-right: 15px;
+}
+.login_down .login_box .signup_form .signup_input_wrapper input {
+  display: block;
+  width: 100%;
+  height: 21px;
+  padding: 6px 12px;
+  font-family: 'Robot', sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  border: none;
+  outline: none;
+}
+.login_down .login_box .signup_form .signup_btn_wrapper {
+  padding: 0px 3px;
+  text-align: center;
+  float: left;
+  margin-left: 15px;
+  vertical-align: top;
+  margin-top: -2px;
+}
+.login_down .login_box .signup_form .signup_btn_wrapper .signup_note {
+  box-sizing: border-box;
+  color: #ffffff;
+  display: inline;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 300;
+  height: auto;
+  line-height: 16px;
+}
+.login_down .login_box .signup_form .signup_btn_wrapper .signup_button {
+  display: block;
+  width: 120px;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  border: none;
+  background-color: #f65f7c;
+  box-shadow: 0px 2px 0px #e2445c;
+  font-family: 'Oswald', sans-serif;
+  font-size: 21px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #fff;
+  border-radius: 3px;
+}
+.login_down .login_box .signup_form .signup_btn_wrapper .signup_button:hover,
+.login_down .login_box .signup_form .signup_btn_wrapper .signup_button:active,
+.login_down .login_box .signup_form .signup_btn_wrapper .signup_button:focus {
+  background-color: #9c3b4d;
+  box-shadow: 0px 2px 0px #9c3b4d;
+  outline: none;
+}
+.login_down .login_box .signup_form .signup_btn_wrapper .signup_button:action {
+  background-color: #e2445c;
 }
 @media screen and (max-width: 450px) {
   .dapulse_footer .footer_inner .footer_left {

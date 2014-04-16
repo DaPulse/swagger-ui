@@ -1604,7 +1604,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
     };
 
     OperationView.prototype.submitOperation = function(e) {
-      var error_free, form, isFileUpload, map, o, opts, val, _i, _j, _k, _len, _len1, _len2, _ref4, _ref5, _ref6;
+      var error_free, form, isFileUpload, map, o, opts, val, verb, _i, _j, _k, _len, _len1, _len2, _ref4, _ref5, _ref6;
 
       if (e != null) {
         e.preventDefault();
@@ -1625,6 +1625,12 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
           return error_free = false;
         }
       });
+      if (this.model.method === 'delete' || this.model.method === 'put') {
+        verb = this.model.method === 'delete' ? 'deletes' : 'modifies';
+        if (!confirm("This operation " + verb + " data in production. Are you sure?")) {
+          error_free = false;
+        }
+      }
       if (error_free) {
         map = {};
         opts = {

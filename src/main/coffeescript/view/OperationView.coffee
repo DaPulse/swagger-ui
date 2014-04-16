@@ -105,6 +105,7 @@ class OperationView extends Backbone.View
   
   submitOperation: (e) ->
     e?.preventDefault()
+
     # Check for errors
     form = $('.sandbox', $(@el))
     error_free = true
@@ -115,6 +116,10 @@ class OperationView extends Backbone.View
         $(@).wiggle
           callback: => $(@).focus()
         error_free = false
+
+    if this.model.method is 'delete' or this.model.method is 'put'
+      verb = if this.model.method is 'delete' then 'deletes' else 'modifies'
+      (error_free = false) unless confirm "This operation #{verb} data in production. Are you sure?"
 
     # if error free submit it
     if error_free

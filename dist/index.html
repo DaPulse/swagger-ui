@@ -3,7 +3,7 @@
 <head>
   <title>daPulse API Documentation</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'/>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'/>  
+  <link href='https://fonts.googleapis.com/css?family=Oswald:300,400' rel='stylesheet' type='text/css'/>  
   <link href='css/highlight.default.css' media='screen' rel='stylesheet' type='text/css'/>
   <link href='css/screen.css' media='screen' rel='stylesheet' type='text/css'/>
   <script type="text/javascript" src="lib/shred.bundle.js"></script>
@@ -68,7 +68,7 @@
 
     $(document).on('click', 'input[name=commit]', function() {
       if (!$('#input_apiKey').val()) {
-        alert('Requests will fail without an API key');
+        alert('WARNING: Without an API Token, requests will fail with "401 Unauthorized"');
       }
     });
 
@@ -102,7 +102,7 @@
 
 <div class="header_description">
   <h2>daPulse API v1 docs</h2>
-  <p>This is the documentation for the daPulse JSON API. The API is capable of handling CORS (Cross-Origin Resource Sharing) requests and all requests require an API key.</p>
+  <p>This is the documentation for the daPulse JSON API. The API is capable of handling CORS (Cross-Origin Resource Sharing) requests and all requests require an API Token.</p>
   
   <p>Using the tools in this page will operate on your production data.</p>
 </div>
@@ -112,8 +112,8 @@
     <form id='api_selector'>
       <div class='input'>
         <label for="input_apiKey" class="start_here">Start Here:</label>
-        <input placeholder="Enter your daPulse API key here" id="input_apiKey" name="apiKey" type="text"/>
-        <a class="what_is_api">Where is my API key <img src="http://d1f5eoceewynq7.cloudfront.net/q_icon.png" style="width: 18px" /></a>
+        <input placeholder="Enter your daPulse API Token here" id="input_apiKey" name="apiKey" type="text"/>
+        <a class="what_is_api">Where is my API Token? <img src="http://d1f5eoceewynq7.cloudfront.net/q_icon.png" style="width: 18px" /></a>
       </div>
     </form>
   </div>
@@ -121,6 +121,29 @@
 
 <div id="message-bar" class="swagger-ui-wrap">&nbsp;</div>
 <div id="swagger-ui-container" class="swagger-ui-wrap"></div>
+
+<div class="login_down">
+  <div class="login_titles">
+    <h4 class="signup_title">
+      Start Using daPulse Today
+    </h4>
+    <h5 class="signup_subtitle">
+      FREE 30 days trial - no credit card needed
+    </h5>
+  </div>
+  <div class="login_box">
+    <form class="form-inline signup_form" data-origin="developers_bottom_bar" action="https://dapulse.com/users/verify_email?origin=developers_bottom_bar" method="post">
+      <div class="row">
+        <div class="col-xs-8 signup_input_wrapper">
+          <input type="email" class="form-control signup_input" placeholder="Enter Work Email" name="email" value="">
+        </div>
+        <div class="signup_btn_wrapper col-xs-4">
+          <button type="submit" class="btn btn-success btn-block signup_button">Sign Up</button> <span class="signup_note">1 minute sign up</span>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
 
 <div class="dapulse_footer">
 	<div class="footer_inner row">
@@ -159,7 +182,7 @@
           <a href="https://plus.google.com/112811949511076393622" target="_blank" data-original-title="Google+" class="social_gplus"></a>
   				<a href="http://www.linkedin.com/company/dapulse-ltd-" target="_blank" data-original-title="Linkedin" class="social_linkedin"></a>
 				</span>
-        <a href="http://dapulse.com/"><img class="logo_retina" src="http://d1f5eoceewynq7.cloudfront.net/api_img/logo_white_x2.png" style="width: 76px"/></a>
+        <a href="http://dapulse.com/"><img class="logo_retina" src="http://d1f5eoceewynq7.cloudfront.net/api_img/logo_white_x2.png" style="width: 100px"/></a>
 			</div>
 
       <div class="page_footer">
