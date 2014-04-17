@@ -1094,6 +1094,9 @@ table {
 .api-popup-actions {
   padding-top: 10px;
 }
+em {
+  font-style: italic;
+}
 .access {
   float: right;
 }
