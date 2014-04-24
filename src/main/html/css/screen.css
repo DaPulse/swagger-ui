@@ -1185,54 +1185,47 @@ em {
   transform: scale3d(0.9, 0.9, 0.9);
 }
 .dapulse_header .dapulse_logo_header:hover {
-    -webkit-animation-duration: 0.45s;
-    -moz-animation-duration: 0.45s;
-    animation-duration: 0.45s;
-    -webkit-animation-name: hp-pulse;
-    -moz-animation-name: hp-pulse;
-    animation-name: hp-pulse;
-    -webkit-animation-fill-mode: forwards;
-    -moz-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.45s;
+  -moz-animation-duration: 0.45s;
+  animation-duration: 0.45s;
+  -webkit-animation-name: hp-pulse;
+  -moz-animation-name: hp-pulse;
+  animation-name: hp-pulse;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
-
 @-webkit-keyframes hp-pulse {
   0% {
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
   }
-
   50% {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
-
   100% {
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
   }
 }
-
 @keyframes hp-pulse {
   0% {
     -webkit-transform: scale(0.9);
     -ms-transform: scale(0.9);
     transform: scale(0.9);
   }
-
   50% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
   }
-
   100% {
     -webkit-transform: scale(0.9);
     -ms-transform: scale(0.9);
     transform: scale(0.9);
   }
 }
-
 .dapulse_header .navbar-brand {
   padding: 7px;
 }
